@@ -19,6 +19,14 @@
  - [待添加中文翻译 - Methods](methods.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 已认领)
  - [待添加中文翻译 - Files and I/O](files-and-io.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 已认领)
  - [待添加中文翻译 - Exceptions](exceptions.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 已认领)
+- 待添加中文翻译 - Java Object Oriented
+ - [待添加中文翻译 - Inheritance](inheritance.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 已认领)
+ - [待添加中文翻译 - Overriding](overriding.md) ([icodeu](https://github.com/icodeu) 已认领)
+ - [待添加中文翻译 - Polymorphism](polymorphism.md) ([icodeu](https://github.com/icodeu) 已认领)
+ - [待添加中文翻译 - Abstraction](abstraction.md) ([icodeu](https://github.com/icodeu) 已认领)
+ - [待添加中文翻译 - Encapsulation](ncapsulation.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
+ - [待添加中文翻译 - Interfaces](interfaces.md)( [bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
+ - [待添加中文翻译 - Packages](packages.md)( [bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
 - 待添加中文翻译 - Advanced
  - [待添加中文翻译 - Data Structures](data-structures.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 已认领)
  - [待添加中文翻译 - Collections](collections.md) ([icodeu](https://github.com/icodeu) 已认领)
