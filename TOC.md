@@ -1,11 +1,11 @@
 - 待添加中文翻译 - Basics
- - [待添加中文翻译 - Home](home.md) 苗帅 已认领
- - [待添加中文翻译 - Overview](overview.md)
- - [待添加中文翻译 - Environment Setup](setup.md)
- - [待添加中文翻译 - Basic Syntax](basic-syntax.md)
- - [待添加中文翻译 - Object & Classes](object-classes.md)
- - [待添加中文翻译 - Basic Datatypes](basic-datatypes.md)
- - [待添加中文翻译 - Variable Types](variable-types.md) 苗帅 已认领
+ - [待添加中文翻译 - Home](home.md) ([GITshine](https://github.com/GITshine) 已认领)
+ - [待添加中文翻译 - Overview](overview.md) ([GITshine](https://github.com/GITshine) 已认领)
+ - [待添加中文翻译 - Environment Setup](setup.md) ([GITshine](https://github.com/GITshine) 已认领)
+ - [待添加中文翻译 - Basic Syntax](basic-syntax.md) ([GITshine](https://github.com/GITshine) 已认领)
+ - [待添加中文翻译 - Object & Classes](object-classes.md) ([GITshine](https://github.com/GITshine) 已认领)
+ - [待添加中文翻译 - Basic Datatypes](basic-datatypes.md) ([GITshine](https://github.com/GITshine) 已认领)
+ - [待添加中文翻译 - Variable Types](variable-types.md) ([GITshine](https://github.com/GITshine) 已认领)
  - [待添加中文翻译 - Modifier Types](modifier-types.md) 赵洁 已认领
  - [待添加中文翻译 - Basic Operators](basic-operators.md)
  - [待添加中文翻译 - Loop Control](loop-control.md)
