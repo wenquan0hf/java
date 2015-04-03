@@ -41,6 +41,9 @@
  - [待添加中文翻译 - Quick Guide](quick-guide.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
  - [待添加中文翻译 - Library Classes](library-classes.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
  
+官方英文原版：   
+http://www.tutorialspoint.com/java/index.htm
+
  >
  注释：舍弃以下章节，不做翻译      
  Java Useful Resources   
