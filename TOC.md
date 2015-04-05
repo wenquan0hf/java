@@ -24,8 +24,8 @@
  - [待添加中文翻译 - Overriding](overriding.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 已认领)
  - [待添加中文翻译 - Polymorphism](polymorphism.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 已认领)
  - [待添加中文翻译 - Abstraction](abstraction.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) 已认领)
- - [待添加中文翻译 - Encapsulation](ncapsulation.md) ([icodeu](https://github.com/icodeu) done)
- - [待添加中文翻译 - Interfaces](interfaces.md) ([icodeu](https://github.com/icodeu) 已认领)
+ - [Encapsulation](ncapsulation.md) ([icodeu](https://github.com/icodeu) done)
+ - [Interfaces](interfaces.md) ([icodeu](https://github.com/icodeu) done)
  - [待添加中文翻译 - Packages](packages.md) ([icodeu](https://github.com/icodeu) 已认领)
 - 待添加中文翻译 - Advanced
  - [待添加中文翻译 - Data Structures](data-structures.md) ([icodeu](https://github.com/icodeu) 已认领)
