@@ -1,5 +1,5 @@
 - 待添加中文翻译 - Basics
- - [待添加中文翻译 - Home](home.md) ([GITshine](https://github.com/GITshine) 已认领)
+ - [待添加中文翻译 - Home](home.md) ([GITshine](https://github.com/GITshine) done)
  - [待添加中文翻译 - Overview](overview.md) ([GITshine](https://github.com/GITshine) 已认领)
  - [待添加中文翻译 - Environment Setup](setup.md) ([GITshine](https://github.com/GITshine) 已认领)
  - [待添加中文翻译 - Basic Syntax](basic-syntax.md) ([GITshine](https://github.com/GITshine) 已认领)
