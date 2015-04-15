@@ -1,4 +1,4 @@
-- 待添加中文翻译 - Basics
+- Basics
  - [Home](home.md) ([GITshine](https://github.com/GITshine) done)
  - [Overview](overview.md) ([GITshine](https://github.com/GITshine) done)
  - [Environment Setup](setup.md) ([GITshine](https://github.com/GITshine) done)
@@ -19,7 +19,7 @@
  - [Methods](methods.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) done)
  - [Files and I/O](files-and-io.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) done)
  - [Exceptions](exceptions.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) done)
-- 待添加中文翻译 - Java Object Oriented
+- Java Object Oriented
  - [Inheritance](inheritance.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) done)
  - [Overriding](overriding.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) done)
  - [Polymorphism](polymorphism.md) ([bjtuweb-12283012](https://github.com/bjtuweb-12283012) done)
@@ -27,19 +27,19 @@
  - [Encapsulation](ncapsulation.md) ([icodeu](https://github.com/icodeu) done)
  - [Interfaces](interfaces.md) ([icodeu](https://github.com/icodeu) done)
  - [Packages](packages.md) ([icodeu](https://github.com/icodeu) done)
-- 待添加中文翻译 - Advanced
+- Advanced
  - [Data Structures](data-structures.md) ([icodeu](https://github.com/icodeu) done)
- - [Collections](collections.md) ([icodeu](https://github.com/icodeu) 已认领)
- - [Generics](generics.md) ([icodeu](https://github.com/icodeu) 已认领)
- - [Serialization](serialization.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
- - [Networking](networking.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
- - [Sending Email](sending-email.md)( [bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
- - [Multithreading](multithreading.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
- - [Applet Basics](applet-basics.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
- - [Documentation](Documentation.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
-- 待添加中文翻译 - Useful Resources
- - [Quick Guide](quick-guide.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
- - [Library Classes](library-classes.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) 已认领)
+ - [Collections](collections.md) ([icodeu](https://github.com/icodeu) done)
+ - [Generics](generics.md) ([icodeu](https://github.com/icodeu) done)
+ - [Serialization](serialization.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) done)
+ - [Networking](networking.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) done)
+ - [Sending Email](sending-email.md)( [bjtuweb-12283007](https://github.com/bjtuweb-12283007) done)
+ - [Multithreading](multithreading.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) done)
+ - [Applet Basics](applet-basics.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) done)
+ - [Documentation](Documentation.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) done)
+- Useful Resources
+ - [Quick Guide](quick-guide.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) done)
+ - [Library Classes](library-classes.md) ([bjtuweb-12283007](https://github.com/bjtuweb-12283007) done)
  
 官方英文原版：   
 http://www.tutorialspoint.com/java/index.htm
