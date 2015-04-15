@@ -326,10 +326,10 @@ Goodbye
 ```
 ## 主要的 Java 多线程概念：
 当用 Java 进行多线程编程时，你将需要以下非常方便的概念：  
--[什么是线程同步？](http://www.tutorialspoint.com/java/java_thread_synchronization.htm)  
+- [什么是线程同步？](http://www.tutorialspoint.com/java/java_thread_synchronization.htm)  
 
--[处理线程间通信](http://www.tutorialspoint.com/java/java_thread_communication.htm)  
+- [处理线程间通信](http://www.tutorialspoint.com/java/java_thread_communication.htm)  
 
--[处理线程死锁](http://www.tutorialspoint.com/java/java_thread_deadlock.htm)  
+- [处理线程死锁](http://www.tutorialspoint.com/java/java_thread_deadlock.htm)  
 
--[主要的线程操作](http://www.tutorialspoint.com/java/java_thread_control.htm)  
+- [主要的线程操作](http://www.tutorialspoint.com/java/java_thread_control.htm)  
