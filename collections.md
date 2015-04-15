@@ -72,6 +72,7 @@ AbstractCollection,AbstractSet,AbstractList,AbstractSequentialList 和 AbstractM
 几个方法能抛出异常 **ClassCastException**，它发生在想要比较不兼容的类型时；或者异常**UnsupportedOperationException**，它发生在想要修改一个不能修改的集合时。  
 
 集合定义了三个静态变量：EMPTY_SET, EMPTY_LIST, 和 EMPTY_MAP。所有都是不变的。
+
 |SN      |算法描述   |
 |----------|:----------:|-----:|
 |1 |[The Collection Algorithms](http://www.tutorialspoint.com/java/java_collection_algorithms.htm)<br> 这是所有算法实现的列表|
