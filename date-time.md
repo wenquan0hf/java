@@ -1,7 +1,7 @@
-# Java日期时间(Date/Time)  
-Java在java.util包中提供了Date类，这个类封装了当前的日期和时间。
+# Java 日期时间 (Date/Time)  
+Java 在 java.util 包中提供了 Date 类，这个类封装了当前的日期和时间。
 
-Date类支持两种构造函数。第一个构造函数初始化对象的当前日期和时间。
+Date 类支持两种构造函数。第一个构造函数初始化对象的当前日期和时间。
 ```
 Date( )
 ```
@@ -25,7 +25,7 @@ Date(long millisec)
 |10 |	String toString( )<br>调用Date对象转换为字符串，并返回结果。|
 
 ## 获取当前日期和时间  
-在Java中容易得到当前的日期和时间。可以使用一个简单的Date对象的toString()方法，如下所示打印当前日期和时间：  
+在 Java中 容易得到当前的日期和时间。可以使用一个简单的 Date 对象的 toString() 方法，如下所示打印当前日期和时间：  
 ```
 import java.util.Date;
   
@@ -47,12 +47,12 @@ Mon May 04 09:51:52 CDT 2009
 ## 日期比较：  
 有以下三种方式来比较两个日期：  
 
-*	可以使用getTime() 来获得自1970年1月1日午夜十二时，起已经过的毫秒数，然后比较两个对象的值。
+*	可以使用 getTime() 来获得自1970年1月1日午夜十二时，起已经过的毫秒数，然后比较两个对象的值。
 *	可以使用 before( ), after( ), and equals( )，由于本月12日在18日前，例如， new Date(99, 2, 12).before(new Date (99, 2, 18)) 返回 true。
-*	可以使用compareTo()方法，这是由Comparable接口定义和由日期执行。
+*	可以使用 compareTo() 方法，这是由 Comparable 接口定义和由日期执行。
 
-## 使用SimpleDateFormat格式化日期：  
-SimpleDateFormat是一个具体的类，用于格式化和分析日期的语言环境敏感的方式。   SimpleDateFormat允许选择任何用户定义的模式为日期时间格式。例如：  
+## 使用 SimpleDateFormat 格式化日期：  
+SimpleDateFormat 是一个具体的类，用于格式化和分析日期的语言环境敏感的方式。   SimpleDateFormat 允许选择任何用户定义的模式为日期时间格式。例如：  
 ```
 import java.util.*;
 import java.text.*;
@@ -73,8 +73,8 @@ public class DateDemo {
 Current Date: Sun 2004.07.18 at 04:14:09 PM PDT
 ````
 
-## 简单的DateFormat格式代码：    
-要指定时间格式，使用时间模式字符串。在这个模式中，所有的ASCII字母被保留为模式字母，其定义如下：
+## 简单的 DateFormat 格式代码：    
+要指定时间格式，使用时间模式字符串。在这个模式中，所有的 ASCII 字母被保留为模式字母，其定义如下：
 
 |字符|	描述|	例子|
 |-----:|-----:|------:|
@@ -99,8 +99,8 @@ Current Date: Sun 2004.07.18 at 04:14:09 PM PDT
 |'|	脱离文本|	分隔符|
 |"|	单引号	|`
 
-## 用printf格式化日期：  
-日期和时间格式用printf方法可以非常轻松地做到。可以使用两个字母的格式，从t开始并在下面给出的表格中的其中一个字母结束。例如：  
+## 用 printf 格式化日期：  
+日期和时间格式用 printf 方法可以非常轻松地做到。可以使用两个字母的格式，从t开始并在下面给出的表格中的其中一个字母结束。例如：  
 ```
 import java.util.Date;
 
@@ -122,7 +122,7 @@ public class DateDemo {
 Current Date/Time : Sat Dec 15 16:37:57 MST 2012
 ```
 如果提供日期多次格式化是一种比较笨的做法。一个格式字符串可以指示要格式化的参数的索引。    
-索引必须紧跟在％之后，并必须由$终止。例如：  
+索引必须紧跟在 ％ 之后，并必须由 $ 终止。例如：  
 ```
 import java.util.Date;
   
@@ -142,7 +142,7 @@ public class DateDemo {
 ```
 Due date: February 09, 2004
 ```
-或者，也可以使用<标志。则表示相同的参数，根据前述格式规范，应再次使用。例如：  
+或者，也可以使用 < 标志。则表示相同的参数，根据前述格式规范，应再次使用。例如：  
 ```
 import java.util.Date;
   
@@ -199,10 +199,10 @@ Due date: February 09, 2004
 |s|	从 1970-01-01 00:00:00 的秒数GMT|	1078884319|
 |Q|	从 1970-01-01 00:00:00 的毫秒数GMT|	1078884319047|
 
-有相关的日期和时间等有用的类。欲了解更多详细信息，可以参考Java标准文档。
+有相关的日期和时间等有用的类。欲了解更多详细信息，可以参考 Java 标准文档。
 
 ## 解析字符串到日期：  
-SimpleDateFormat类有一些额外的方法，如parse()，它试图根据存储在给定SimpleDateFormat 的对象的格式来分析字符串。例如：
+SimpleDateFormat 类有一些额外的方法，如 parse()，它试图根据存储在给定 SimpleDateFormat 的对象的格式来分析字符串。例如：
 ```
 import java.util.*;
 import java.text.*;
@@ -291,11 +291,11 @@ Difference is : 5993
 ```
 
 ## GregorianCalendar 类：
-GregorianCalendar是一个Calendar类具体的实现，即你所熟悉的对正常Gregorian公历的实现。本教程中不讨论Calendar类，可以看看标准Java文档。   
+GregorianCalendar 是一个 Calendar 类具体的实现，即你所熟悉的对正常 Gregorian 公历的实现。本教程中不讨论 Calendar 类，可以看看标准 Java 文档。   
 
-Calendar的getInstance()方法返回与当前日期和时间默认语言环境和时区初始化的一个GregorianCalendar。   GregorianCalendar中定义了两个字段：AD和BC。这些代表在公历中定义的两个时代。 
+Calendar 的 getInstance() 方法返回与当前日期和时间默认语言环境和时区初始化的一个 GregorianCalendar。   GregorianCalendar 中定义了两个字段：AD 和 BC。这些代表在公历中定义的两个时代。 
 
-也有几个构造函数的GregorianCalendar对象：
+也有几个构造函数的 GregorianCalendar 对象：
 
 |SN   |	 构造函数描述|
 |----:|---------:|
@@ -307,7 +307,7 @@ Calendar的getInstance()方法返回与当前日期和时间默认语言环境�
 |6|	GregorianCalendar(TimeZone zone) <br>基于当前时间，使用默认的语言环境在给定的时区构建一个GregorianCalendar。
 |7|	GregorianCalendar(TimeZone zone, Locale aLocale) <br>基于当前时间与给定语言环境的给定时区构建一个GregorianCalendar。|  
 
-这里是由GregorianCalendar类提供一些有用的支持方法的列表：
+这里是由 GregorianCalendar 类提供一些有用的支持方法的列表：
 
 |SN|	方法和描述|
 |----:|-------:|
@@ -381,5 +381,5 @@ Date: Apr 22 2009
 Time: 11:25:27
 The current year is not a leap year
 ```
-在Calendar类中的可用常量的完整列表，可以参考标准的Java文档。
+在 Calendar 类中的可用常量的完整列表，可以参考标准的 Java 文档。
 
