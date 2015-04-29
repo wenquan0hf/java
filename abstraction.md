@@ -83,7 +83,7 @@ Employee.java:46: Employee is abstract; cannot be instantiated
 1 error
 ```
 
-## 继承抽象类:
+## 继承抽象类
 
 我们可以如下继承 Employee 类：
 
