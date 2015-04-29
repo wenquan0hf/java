@@ -23,10 +23,10 @@ public class Deer extends Animal implements Vegetarian{}
 
 现在 Deer 类是多态的，因为他有多个继承机制。针对上面的例子有以下说法：
 
-* Deer 就是 Animal
-* Deer 就是 Vegetarian
-* Deer 就是 Deer
-* Deer 就是 Object
+- Deer 就是 Animal
+- Deer 就是 Vegetarian
+- Deer 就是 Deer
+- Deer 就是 Object
 
 当我们提供引用变量来引用 Deer 对象，下面的声明是合法的：
 
@@ -159,10 +159,10 @@ Mailing check to John Adams with salary 2400.0
 
 这里我们实例化两个 Salary 对象。一个用 Salary 引用 s，另一个用Employee引用 e。
 
-当调用 s.mailCheck()方法时，编译器在编译时发现 mailCheck()在 Salary类中，并且 JVM 在运行时调用 Salary类的 mailCheck()方法。
+当调用 s.mailCheck() 方法时，编译器在编译时发现 mailCheck() 在 Salary类中，并且 JVM 在运行时调用 Salary类的 mailCheck() 方法。
 
-调用 e 的 mailCheck() 是略有不同的因为 e 是一个 Employee的引用。当编译器发现 e.mailCheck()时,编译器在 Employee 类中发现 mail.Check()方法。
+调用 e 的 mailCheck() 是略有不同的因为 e 是一个 Employee的引用。当编译器发现 e.mailCheck() 时,编译器在 Employee 类中发现 mail.Check() 方法。
 
-这里,在编译时,编译器使用 Employee 的 mailCheck() 方法来验证。在运行时，JVM 调用 Salary类的 mailCheck()类。
+这里,在编译时,编译器使用 Employee 的 mailCheck() 方法来验证。在运行时，JVM 调用 Salary 类的 mailCheck() 类。
 
 这种行为被称为虚方法调用，该方法也被称为虚方法。Java 中所有此规则的方法行为，无论是什么数据类型的引用，运行时会调用被覆盖方法，在编译时都会遵循于源码。
