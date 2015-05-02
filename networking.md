@@ -1,38 +1,41 @@
-# Java-网络设计（套接字编程）
-术语网络编程指写跨多种设备（电脑）执行的，设备使用一个网络互相连接的程序。  
+# Java - 网络设计（套接字编程）
+
+术语网络编程指编写跨多种设备（电脑）执行的，设备使用一个网络互相连接的程序。  
 
 J2SE API 的 java.net 包包含了一个类的集合和提供底层通信细节的接口，允许你编写专注解决即将到来的问题的程序。  
 
- java.net 包为两种常用的网络协议提供支持：  
-- **TCP：**TCP 代表传输控制协议，允许两个应用程序间的可靠通信。TCP 通常在因特网协议上被使用，这被称为 TCP/IP。  
-- **UDP：**UDP 代表用户数据报协议，一个无连接的允许应用程序间数据包传输的协议。  
+java.net 包为两种常用的网络协议提供支持：  
+- **TCP：** TCP 代表传输控制协议，允许两个应用程序间的可靠通信。TCP 通常在因特网协议上被使用，这被称为 TCP/IP。  
+- **UDP：** UDP 代表用户数据报协议，一个无连接的允许应用程序间数据包传输的协议。  
 
 本教程给以下两个主题提供更好的理解：  
-- **套接字编程：**这是在网络中最广泛使用的概念并且被很详细地解释。  
-- **URL 处理：**这将被个别地解释。点击这里来学习 java 语言中的 [URL 处理](http://www.tutorialspoint.com/java/java_url_processing.htm)。  
+- **套接字编程：** 这是在网络中最广泛使用的概念并且被很详细地解释。  
+- **URL 处理：** 这将被个别地解释。点击这里来学习 java 语言中的 [URL 处理](http://www.tutorialspoint.com/java/java_url_processing.htm)。  
 
 ## 套接字编程
+
 套接字利用TCP在两台电脑间提供通信机制。一个客户端程序在通信最后创建一个套接字并努力连接服务器套接字。  
 
 当连接建立时，服务器在通信结束时创建一个套接字对象。客户端和服务器现在可以通过从套接字读或者写来交流。  
 
-java.net.Socket 类代表一个套接字，而且java.net.ServerSocket 类为服务器程序提供了一种机制来监听客户端并和它们建立连接。  
+java.net.Socket 类代表一个套接字，而且 java.net.ServerSocket 类为服务器程序提供了一种机制来监听客户端并和它们建立连接。  
 
-一下步骤发生在两台电脑使用套接字建立TCP连接时：  
+以下步骤发生在两台电脑使用套接字建立TCP连接时：  
 - 服务器实例化一个 ServerSocket 对象，指示通信将产生在哪个端口号；  
-- 服务器调用 ServerSocket 类的  accept() 方法。这个方法等待直到一个客户端在给的端口上连接到服务器；    
+- 服务器调用 ServerSocket 类的 accept() 方法。这个方法等待直到一个客户端在给定的端口上连接到服务器；  
 - 在服务器等待后，一个客户端实例化一个 Socket 对象，指定服务器名称和连接的端口号；   
 - Socket 类的构造函数努力将客户端连接到指定的服务器和端口号。如果通信建立，客户端现在就拥有了一个能和服务器通信的 Socket 对象；  
 - 在服务器端，accept() 方法在服务器上返回一个连接到客户端套接字的新的套接字。  
 
 在连接建立后，通信可以使用 I/O 流产生。每个套接字都有一个输出流和一个输入流。客户端的输出流连接到服务器端的输入流，客户端的输入流连接到服务器端的输出流。  
 
-TCP是一个双向的通信协议，所以数据可以在两个流同时发送。有以下有用的提供完整的方法集的类来实现套接字。  
+TCP是一个双向的通信协议，所以数据可以在两个流同时发送。由以下提供完整的方法的类来实现套接字。  
 
 ## ServerSocket 类方法
-java.net.ServerSocket 类被服务器应用程序来获得一个端口和监听客户端请求。  
 
-ServerSocket 类有四个构造函数：  
+java.net.ServerSocket 类被服务器应用程序使用来获得一个端口和监听客户端请求。  
+
+ServerSocket 类有四个构造函数：
 
 | SN        | 方法描述   |  
 |----------|:----------:|-----:|
@@ -52,9 +55,10 @@ ServerSocket 类有四个构造函数：
 |3 |**public void setSoTimeout(int timeout)**<br>把超时的值设为服务器套接字在 accept() 内等待客户端的时间。|
 |4 |**public void bind(SocketAddress host, int backlog)**<br>将套接字绑定在特定的服务器和 SocketAddress 对象的端口上。如果你使用无参数的构造函数实例化一个 ServerSocket 对象，使用这个方法。|
  
-当 ServerSocket 调用  accept()，方法直到一个客户端连接才返回。在一个客户端确实连接后，ServerSocket 在一个未指定的端口上创建一个新的套接字，并返回一个新套接字的引用。一个 TCP 连接现在就存在于客户端和服务器间了，通信也可以开始了。  
+当 ServerSocket 调用  accept() 方法直到一个客户端连接才返回。在一个客户端确实连接后，ServerSocket 在一个未指定的端口上创建一个新的套接字，并返回一个新套接字的引用。一个 TCP 连接现在就存在于客户端和服务器间了，通信就可以开始了。  
 
 ## Socket 类方法
+
 java.net.Socket 类方法代表客户端和服务器都用来互相通信的套接字。客户端通过实例化而拥有一个 Socket 对象，然而服务器从 accept() 方法的返回值获得一个 Socket 对象。  
 
 Socket 类有5个客户端用来连接到服务器的构造函数：  
@@ -66,7 +70,6 @@ Socket 类有5个客户端用来连接到服务器的构造函数：
 |3 |**public Socket(String host, int port, InetAddress localAddress, int localPort) throws IOException.**<br>连接到指定的主机和端口，在指定地址和端口上的本地主机创建一个套接字。|
 |4 |**public Socket(InetAddress host, int port, InetAddress localAddress, int localPort) throws IOException.**<br>这个方法和前一个构造函数相同，除了主机由一个 InetAddress 对象而不是一个 String 表示。|
 |5 |**public Socket()**<br>创建一个不连接的套接字。使用 connect() 方法来连接这个套接字到服务器。|
-
 
 当套接字构造函数返回时，它并不简单地实例化一个 Socket 对象，它实际上试图连接到指定的服务器和端口。  
 
@@ -85,6 +88,7 @@ Socket 类有5个客户端用来连接到服务器的构造函数：
 
 
 ## InetAddress 类方法  
+
 这个类表示一个网络协议（IP）的地址。这些是在做套接字编程时将会用到的有用的方法：  
 
 | SN        | 方法描述   |  
@@ -97,7 +101,8 @@ Socket 类有5个客户端用来连接到服务器的构造函数：
 |6 |**static InetAddress InetAddress getLocalHost()**<br>返回本地主机。|
 |7 |**String toString()**<br>将 IP 地址转换为字符串。|
 
-## 套接字客户端示例:
+## 套接字客户端示例
+
 下列的 GreetingClient 是一个利用一个套接字连接到服务器的客户端程序，它发送一个问候，并等待响应。  
 
 ```
@@ -138,7 +143,8 @@ public class GreetingClient
 }
 ```
 
-## 套接字服务器示例：
+## 套接字服务器示例
+
 下列的 GreetingServer 程序是一个使用 Socket 类来监听由命令行参数指定的端口号上的客户端的服务器应用程序的一个例子：  
 
 ```
@@ -202,13 +208,15 @@ public class GreetingServer extends Thread
 }
 ```  
 
-编译客户端和服务器然后像这样开始服务器：  
+编译客户端和服务器然后像这样开始服务器：
+  
 ```
 $ java GreetingServer 6066
 Waiting for client on port 6066...  
 ```
 
 像这样检查客户端程序：
+
 ```
 $ java GreetingClient localhost 6066
 Connecting to localhost on port 6066
