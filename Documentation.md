@@ -1,4 +1,5 @@
 # Java 文件注释
+
 Java 语言支持三种注释形式：  
 
 |注释      |描述   |
@@ -10,9 +11,11 @@ Java 语言支持三种注释形式：
 这个指导是关于解释 Javadoc 的。我们将看到我们怎样能利用 Javadoc 来为我们的 Java 代码生成有用的文件。  
 
 ## 什么是 Javadoc？
-Javadoc 是 JDK 附带的一个工具并且它被用来生成从需要预定义格式的文档的 Java 源代码而来的 HTML 格式的 Java 代码文件。  
+
+Javadoc 是 JDK 附带的一个工具，它被用来生成从需要预定义格式的文档的 Java 源代码至 HTML 格式的 Java 代码文件。  
 
 以下是一个简单的例子，其中红色部分代表 Java 注释：  
+
 ```
 /**
 * The HelloWorld program implements an application that
@@ -30,7 +33,8 @@ public class HelloWorld {
 }
 ```
 
-你可以将需要的 HTML 标签包括在描述部分内，比如，下面的例子利用 \<h1\>...\</h1\>来定义头部和\<p\>被用来创建段落间隔：  
+你可以将需要的 HTML 标签包括在描述部分内，比如，下面的例子利用 \<h1\>...\</h1\> 来定义头部和 \<p\> 被用来创建段落间隔：
+
 ```
 /**
 * <h1>Hello, World!</h1>
@@ -52,10 +56,12 @@ public class HelloWorld {
     }
 }
 ```
-## javadoc 标签:
+
+## Javadoc 标签
+
 Javadoc 标签是 Javadoc 认可的关键字，它定义了下面信息的类型。  
 
-javadoc 工具认可下面的标签： 
+Javadoc 工具认可下面的标签： 
 
 |标签      |描述   |语法   |
 |----------|:----------:|-----:|
@@ -78,10 +84,12 @@ javadoc 工具认可下面的标签：
 |{@value}|当{@value}被用在一个静态字段的文本注释中，它展示了那个常量的值|{@value package.class#field}|
 |@version|当 -version 选项被使用时用特定的 version w文本给生成的文本添加一个“Version”副标题|@version version-text|
 
-## 例子：
-下面的程序使用一些重要的可得的标签来做文档注释。你可以基于你的请求利用其它的标签。  
+### 示例
 
-关于 AddNum 类的文档将由 HTML 文件 AddNum.html 创建但是同时一个名为 index.html 的主文件也将被创建。  
+下面的程序使用一些重要的标签来做文档注释。你可以基于你的需求利用其它的标签。  
+
+关于 AddNum 类的文档将由 HTML 文件 AddNum.html 创建，但是同时一个名为 index.html 的主文件也将被创建。 
+ 
 ```
 import java.io.*;
 
@@ -128,7 +136,9 @@ public class AddNum {
    }
 }
 ```
-现在，处理使用 javadoc 公式的 AddNum.java 文件：
+
+现在，处理使用 Javadoc 的 AddNum.java 文件：
+
 ```
 $ javadoc AddNum.java
 Loading source file AddNum.java...
@@ -153,4 +163,5 @@ Generating /help-doc.html...
 1 warning
 $
 ```
-你可以在这检查所有的生成的文档：[AddNum](http://www.tutorialspoint.com/java/index.html)。如果你正在使用 JDK 1.7 那么 javadoc 不生成 **stysheet.css**,所以我建议从[http://docs.oracle.com/javase/7/docs/api/stylesheet.css](http://docs.oracle.com/javase/7/docs/api/stylesheet.css)下载并使用标准的 stylesheet。
+
+你可以在这检查所有的生成的文档：[AddNum](http://www.tutorialspoint.com/java/index.html)。如果你正在使用 JDK 1.7 那么 Javadoc 不生成 **stysheet.css**,所以我建议从 [http://docs.oracle.com/javase/7/docs/api/stylesheet.css](http://docs.oracle.com/javase/7/docs/api/stylesheet.css) 下载并使用标准的 stylesheet。
