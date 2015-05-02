@@ -1,9 +1,10 @@
 # Java - 文件和I/O
+
 在 Java 中 java.io 包含的每一个类几乎都要进行输入和输出操作。所有的这些流代表一个输入源和输出目的地。在 java.io 包中支持许多数据，如原语，对象，本地化字符等等。
 
 流可以被定义为一个序列的数据。输入流用来从一个源中读数据，输出流用来向一个目的地写数据。
 
-Java提供了强大但灵活有关文件和网络的I/O功能，但本教程涵盖的是非常基础的流和IO操作。我们可以看到一个接一个的最基本的例子。
+Java 提供了强大且灵活的有关文件和网络的 I/O 功能，但本教程涵盖的是非常基础的流和 I/O 操作。我们可以看到一个接一个的最基本的例子。
 
 ## 字节流
 
@@ -38,7 +39,7 @@ public class CopyFile {
 }
 ```
 
-接下来我们需要有一个文件 input.txt ，他的内容如下：
+接下来我们需要有一个文件 input.txt ，内容如下：
 
 ```
 This is test for copy file.
@@ -50,6 +51,7 @@ This is test for copy file.
 $javac CopyFile.java
 $java CopyFile
 ```
+
 ## 字符流
 
 Java 字节流是用来处理8比特字节的输入和输出，Java 字符流用于处理16位 unicode 的输入和输出。尽管这里有许多关于字符流的类，但最常用的类是， FileReader 和 FileWriter。虽然在内部 FileReader 还是使用 FileInputStream 和 FileWriter 使用 FileOutputStream，但是主要的区别是 FileReader 和 FileWriter 一次读写两个字节。
@@ -85,8 +87,7 @@ public class CopyFile {
 }
 ```
 
-
-接下来我们需要有一个文件 input.txt ，他的内容如下：
+接下来我们需要有一个文件 input.txt ，内容如下：
 
 ```
 This is test for copy file.
@@ -101,11 +102,11 @@ $java CopyFile
 
 ## 标准流
 
-所有的编程语言都提供了对标准I/O流的支持，即用户可以从自己的键盘上进行输入，并且从屏幕上的到输出。如果你了解 C 或 C++ 编程语言，那你一定知道三种标准输入输出 STDIN, STDOUT 和 STDERR。同样的 Java 也提供了以下的三种标准流：
+所有的编程语言都提供了对标准 I/O 流的支持，即用户可以从自己的键盘上进行输入，并且从屏幕上输出。如果你了解 C 或 C++ 编程语言，那你一定知道三种标准输入输出 STDIN, STDOUT 和 STDERR。同样的 Java 也提供了以下的三种标准流：
 
-- Standard Input：这是用来将数据反馈给用户的程序，通常键盘作为标准输入流并且表示为 System.in 。
+- Standard Input：这是用来将数据反馈给用户的程序，通常键盘作为标准输入流并且表示为 System.in。
 - Standard Output：这是用于输出用户程序产生的数据，通常电脑屏幕作为标准输出流，并且表示为 System.out。
-- Standard Error: 这是用来输出用户产生的错误数据，常电脑屏幕作为标准错误流，并且表示为 System.err。
+- Standard Error: 这是用来输出用户产生的错误数据，通常电脑屏幕作为标准错误流，并且表示为 System.err。
 
 下面是一个示例程序用来创建一个 InputStreamReader 来读标准输入流直到用户输入字符 "q"：
 
@@ -134,7 +135,7 @@ public class ReadConsole {
 }
 ```
 
-让我们把上面的代码放到ReadConsole.java中并且用如下方法编译执行它。这个程序将不断地读写相同的字符直到我们按下 "q"。
+让我们把上面的代码放到 ReadConsole.java 中并且用如下方法编译执行它。这个程序将不断地读写相同的字符直到我们按下 "q"。
 
 ```
 $javac ReadConsole.java
@@ -147,6 +148,7 @@ e
 q
 q
 ```
+
 ## 读写文件
 
 像我们之前描述的，一个流可以定义为一个序列的数据。 输入流用来从一个源中读数据，输出流用来向一个目的地写数据。
@@ -155,7 +157,7 @@ q
 
 ![image](images/iostreams.jpg)
 
-两个重要的流是 FileInputStream 和 FileOutputStream，我们将会在本教程中讨论：
+两个重要的流是 FileInputStream 和 FileOutputStream，我们将会在本教程中讨论。
 
 ## FileInputStream
 
@@ -167,7 +169,7 @@ q
 InputStream f = new FileInputStream("C:/java/hello");
 ```
 
-下面的构造函数需要以一个文件对象作为参数来去创建一个输入流对象去读文件，首先我们用  File() 方法来去创建一个文件对象：
+下面的构造函数需要以一个文件对象作为参数来去创建一个输入流对象去读文件，首先我们用 File() 方法来去创建一个文件对象：
 
 ```
 File f = new File("C:/java/hello");
@@ -186,13 +188,13 @@ InputStream f = new FileInputStream(f);
 |5|	public int available() throws IOException{} 给出能从输入流中读到的字节数，返回一个int类型数据|
 
 这里是其他重要的可用输入流，你可以参考以下链接：
-- [ByteArrayInputStream](http://www.tutorialspoint.com/java/java_bytearrayinputstream.htm)
 
+- [ByteArrayInputStream](http://www.tutorialspoint.com/java/java_bytearrayinputstream.htm)
 - [DataInputStream](http://www.tutorialspoint.com/java/java_datainputstream.htm)
 
 ## FileOutputStream
 
-FileOutputStream 是用来传建一个文件，并向其中写入数据。如果之前没有该文件，该流会在打开流之前创建一个文件。
+FileOutputStream 是用来创建一个文件，并向其中写入数据。如果之前没有该文件，该流会在打开流之前创建一个文件。
 
 这里是两个能够产生 FileOutputStream 对象的构造函数。
 
@@ -201,7 +203,8 @@ FileOutputStream 是用来传建一个文件，并向其中写入数据。如果
 ```
 OutputStream f = new FileOutputStream("C:/java/hello")
 ```
-下面的构造函数需要以一个文件对象作为参数来去创建一个输出流对象去写文件，首先我们用  File() 方法来去创建一个文件对象：
+
+下面的构造函数需要以一个文件对象作为参数来去创建一个输出流对象去写文件，首先我们用 File() 方法来去创建一个文件对象：
 
 ```
 File f = new File("C:/java/hello");
@@ -220,11 +223,11 @@ OutputStream f = new FileOutputStream(f)
 
 这里是其他重要的可用输入流，你可以参考以下链接：
 - [ByteArrayOutputStream](http://www.tutorialspoint.com/java/java_bytearrayoutputstream.htm)
-
 - [DataOutputStream](http://www.tutorialspoint.com/java/java_dataoutputstream.htm)
 
-## 例子：
-下面的是一个例子来演示 InputStream 和 OutputStream：
+### 示例
+
+下面是一个例子来演示 InputStream 和 OutputStream：
 
 ```
 import java.io.*;
@@ -255,30 +258,28 @@ public class fileStreamTest{
 }
 ```
 
-上面的代码将产生 test.txt 文件并且以二进制格式写给出的数字。同样将在stdout屏幕输出。
+上面的代码将产生 test.txt 文件并且以二进制格式写入给出的数字。同样将在 stdout 屏幕输出。
 
 ## 文件导航和 I/O
 
 这里我们需要查看很多类来去了解文件导航和I/O。
 
 - [File Class](http://www.tutorialspoint.com/java/java_file_class.htm)
-
 - [FileReader Class](http://www.tutorialspoint.com/java/java_filereader_class.htm)
-
 - [FileWriter Class](http://www.tutorialspoint.com/java/java_filewriter_class.htm)
 
+## Java目录
 
-## Java目录：
+目录是一个文件可以包含其他文件和目录的列表。你想要在目录中列出可用文件列表，可以通过使用 File 对象创建目录，获得完整详细的能在 File 对象中调用的以及有关目录的方法列表。
 
-目录是一个文件可以包含其他文件和目录的列表。你想要在目录中列出可用文件列表，可以通过使用 File 对象创建目录，获得完整详细的能在File 对象中调用的以及有关目录的方法列表。
+## 创建目录
 
-## 创建目录：
-这里有两个有用的文件实用程序方法，能够创建目录：
+这里有两个有用的文件方法，能够创建目录：
 
 - mkdir( ) 方法创建了一个目录，成功返回 true ，创建失败返回 false。失败情况是指文件对象的路径已经存在了,或者无法创建目录,因为整个路径不存在。
-- mkdir()方法创建一个目录和它的上级目录。
+- mkdirs( ) 方法创建一个目录和它的上级目录。
 
-以下示例创建“/ tmp / user / java / bin”目录:
+以下示例创建 “/ tmp / user / java / bin” 目录:
 
 ```
 import java.io.File;
@@ -293,9 +294,9 @@ public class CreateDir {
 }
 ```
 
-编译并执行以上代码创建“/ tmp /user/ java / bin”。
+编译并执行以上代码创建 “/ tmp /user/ java / bin”。
 
-提示：Java自动按UNIX和Windows约定来处理路径分隔符。如果在Windows版本的Java中使用正斜杠(/),仍然得到正确的路径。
+提示：Java 自动按 UNIX 和 Windows 约定来处理路径分隔符。如果在 Windows 版本的 Java 中使用正斜杠(/),仍然可以得到正确的路径。
 
 ## 目录列表
 

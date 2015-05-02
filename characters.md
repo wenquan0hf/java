@@ -1,7 +1,9 @@
-# Java Character 类
+# Java - Character 类
+
 一般情况下，当我们与字符打交道时，我们用原始数据类型 char。 
 
-## 示例：
+## 示例
+
 ```
 char ch = 'a';
 
@@ -11,14 +13,19 @@ char uniChar = '\u039A';
 // an array of chars
 char[] charArray ={ 'a', 'b', 'c', 'd', 'e' };
 ```
-然而在开发中，我们会遇到我们需要使用对象而不是原始数据类型的情况。为了达到这个需求。Java 为原始数据类型 char 提供了包装类 Character。
+
+然而在开发中，我们会遇到需要使用对象而不是原始数据类型的情况。为了达到这个需求。Java 为原始数据类型 char 提供了包装类 Character。
+
 Character 类为操控字符提供了一系列有用处的类（例如：静态类）。你可以借助 Character 构造函数创造一个 Character 对象。  
+
 ```
 Character ch = new Character('a');
 ```
+
 Java 编译器也将能在某些情况下为你创造一个 Character 对象。例如：如果你将一个原始 char 传输到一个可预期对象的方法，编译器就会为你自动将 char 转化成 Character。 如果转换从反方向进行，这个特点被称之为自动装箱或拆箱。
 
-## 示例：
+## 示例
+
 ```
 // Here following primitive char 'a'
 // is boxed into the Character object ch
@@ -29,10 +36,13 @@ Character ch = 'a';
 
 char c = test('x');
 ```
-## 转义序列：
+
+## 转义序列
 
 有反斜杠（\）在前的字符是一个转义序列并且对于编译器有特殊的意义。
-换行符(\ n)一直在 System.out.println() 语句的本教程中经常使用，在字符串打印出来后提前下一行。
+
+换行符(\n)在 System.out.println() 语句中经常使用，在字符串打印出来后换行。
+
 以下的表格展示了 Java 转义序列：  
 
 |转义序列|	描述|
@@ -47,8 +57,10 @@ char c = test('x');
 
 当一个转义序列遇到一个打印语句，编译器就会相应地解译。
 
-## 示例：  
-如果你想把引号放入引号内，必须使用转义序列,\”,在内部引用:  
+## 示例
+
+如果你想把引号放入引号内，必须使用转义序列, \” ,在内部引用:  
+
 ```
 public class Test {
 
@@ -57,12 +69,16 @@ public class Test {
    }
 }
 ```
+
 这将产生以下结果：  
+
 ```
 She said "Hello!" to me.
 ```
-## Character 方法：  
-以下列表是实现 Character 类所有子类的重要的示例方法： 
+
+## Character 方法
+
+以下列表是实现 Character 类所有子类的重要的实例方法： 
 
 |SN   |	方法描述|
 |------|------|
@@ -77,5 +93,6 @@ She said "Hello!" to me.
 
 若想查看完整的方法，请参阅 java.lang.Character API 规范。  
 
-## 接下来是：  
-在一个部分，我们将会浏览 Java 的 String 类。你将会学习到如何有效地声明和使用 Strings 并且在 String 类中一些重要的方法。
+## 接下来是？
+ 
+在下一个部分，我们将会浏览 Java 的 String 类。你将会学习到如何有效地声明和使用 Strings 并且学习在 String 类中一些重要的方法。

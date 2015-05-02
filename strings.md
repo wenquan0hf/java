@@ -1,15 +1,21 @@
-# Java String 类  
-字符串，它被广泛应用于 Java 编程，是一个字符序列。在 Java 编程语言中，字符串是对象。  
+# Java - String 类
+ 
+字符串，它被广泛应用于 Java 编程，是一个字符序列。在 Java 编程语言中，字符串是对象。
+  
 Java 平台提供了 String 类来创建和操作字符串。
 
-## 创建字符串：  
+## 创建字符串
+
 最直接的方式来创建一个字符串是这样写的：
+
 ```
 String greeting = "Hello world!";
 ```
-无论何时在你的代码中遇到一个字符串，编译器在这种情况下用它的值创建一个 String 对象，如："Hello world!'.  
 
-任何其他对象可以通过使用 new 关键字，并构造函数创建 String 对象。 String 类有11种构造函数提供使用不同的来源的字符串的初始值，如一个字符数组。
+无论何时在你的代码中遇到一个字符串，编译器在这种情况下用它的值创建一个 String 对象，如："Hello world!'。  
+
+任何其他对象可以通过使用 new 关键字，并通过构造函数创建 String 对象。 String 类有11种构造函数提供使用不同类型的字符串的初始值，如一个字符数组。
+
 ```
 public class StringDemo{
 
@@ -20,15 +26,20 @@ public class StringDemo{
    }
 }
 ```
+
 这将产生以下结果：  
+
 ```
 hello.
 ```
-**注** String 类是不可变的，因此，一旦创建了 String 对象那么是不能改变的。如果有必要大部分修改字符的字符串，那么应该使用 String Buffer & String Builder 类.
 
-## String 长度: 
-用于获取有关对象的信息的方法称为存取方法。可以和字符串一起使用的一个存取方法是 length() 方法，它返回包含在字符串对象中的字符数。  
+**注** String 类是不可变的，因此，一旦创建了 String 对象那么是不能改变的。如果有必要大部分修改字符的字符串，那么应该使用 StringBuffer & StringBuilder 类。
+
+## String 长度
+用于获取有关对象的信息的方法称为存取方法。可以和字符串一起使用的一个存取方法是 length() ，它返回包含在字符串对象中的字符数。
+  
 下面的两行代码被执行之后，len 等于17：
+
 ```
 public class StringDemo {
 
@@ -39,28 +50,41 @@ public class StringDemo {
    }
 }
 ```
+
 这将产生以下结果:
+
 ```
 String Length is : 17
 ```
-## 连接字符串：  
+
+## 连接字符串
+
 String类包括用于连接两个字符串的方法：  
+
 ```
 string1.concat(string2);
 ```
+
 这返回一个新的字符串，即在 string1 结尾处添加 string2。还可以使用 concat（）方法连接字符串，如：  
+
 ```
 "My name is ".concat("Zara");
 ```
-字符串比较常使用“ + ” 运算符连接在一起，如：  
+
+字符串更常使用 “ + ” 运算符连接在一起，如：  
+
 ```
 "Hello," + " world" + "!"
 ```
+
 这将产生：
+
 ```
 "Hello, world!"
 ```
+
 看看下面的例子：  
+
 ```
 public class StringDemo {
 
@@ -70,21 +94,28 @@ public class StringDemo {
    }
 }
 ```
+
 这将产生以下结果:
+
 ```
 Dot saw I was Tod
 ```
 
-## 创建格式化字符串：  
-已经有 printf() 和 format() 方法来打印输出格式的数字。 String 类有一个等价类的方法 format()，它返回一个 String 对象，而不是一个 PrintStream 对象。
-使用字符串的静态 format() 方法允许创建可重复使用的格式化字符串，而不是一次性的 print 语句。例如，代替以下方法：  
+## 创建格式化字符串
+
+已经有 printf() 和 format() 方法来打印输出格式的数字。 String 类有一个等价的方法 format()，它返回一个 String 对象，而不是一个 PrintStream 对象。
+
+使用字符串的静态 format() 方法允许创建可重复使用的格式化字符串，而不是一次性的 print 语句。例如，如果代替以下方法：  
+
 ```
 System.out.printf("The value of the float variable is " +
                   "%f, while the value of the integer " +
                   "variable is %d, and the string " +
                   "is %s", floatVar, intVar, stringVar);
 ```
+
 可以这样写：
+
 ```
 String fs;
 fs = String.format("The value of the float variable is " +
@@ -94,7 +125,8 @@ fs = String.format("The value of the float variable is " +
 System.out.println(fs);
 ```
 
-## String 方法:  
+## String 方法
+
 这里是由 String 类支持的方法列表：
 
 |SN|	方法及描述|
@@ -145,4 +177,3 @@ System.out.println(fs);
 |44	|String toUpperCase(Locale locale) <br>使用给定Locale的规则将此String中所有的字符转换为大写。|
 |45	|String trim() <br>返回字符串的一个副本，开头和结尾的空格去除。|
 |46	|static String valueOf(primitive data type x) <br>返回传递的数据类型参数的字符串表示形式。|
-
