@@ -159,7 +159,7 @@ q
 
 两个重要的流是 FileInputStream 和 FileOutputStream，我们将会在本教程中讨论。
 
-## FileInputStream
+## 文件输入流
 
 这个流是用来从文件中读数据的。对象能够通过用关键字 new 来创建，并且这里有很多可用的不同类型的构造函数。
 
@@ -192,7 +192,7 @@ InputStream f = new FileInputStream(f);
 - [ByteArrayInputStream](http://www.tutorialspoint.com/java/java_bytearrayinputstream.htm)
 - [DataInputStream](http://www.tutorialspoint.com/java/java_datainputstream.htm)
 
-## FileOutputStream
+## 文件输出流
 
 FileOutputStream 是用来创建一个文件，并向其中写入数据。如果之前没有该文件，该流会在打开流之前创建一个文件。
 
