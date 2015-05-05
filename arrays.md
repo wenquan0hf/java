@@ -42,7 +42,6 @@ arrayRefVar = new dataType[arraySize];
 
 上面的语句做了两件事：  
 * 它创建了一个使用 new dataType[arraySize] 的数组;
-
 * 它将新创建的数组引用分配给变量 arrayRefVar。  
 
 声明数组变量，建立一个数组，并分配给变量数组引用可以在一个语句中组合使用，如下所示：
