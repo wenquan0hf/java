@@ -1,4 +1,4 @@
-# Java 字符串
+# Java 字符串类
  
 字符串，它被广泛应用于 Java 编程，是一个字符序列。在 Java 编程语言中，字符串是对象。
   
@@ -12,7 +12,7 @@ Java 平台提供了 String 类来创建和操作字符串。
 String greeting = "Hello world!";
 ```
 
-无论何时在你的代码中遇到一个字符串，编译器在这种情况下用它的值创建一个 String 对象，如："Hello world!'。  
+当你创建一个字符串时，编译器在这种情况下用它的值创建一个 String 对象，如："Hello world!'。  
 
 任何其他对象可以通过使用 new 关键字，并通过构造函数创建 String 对象。 String 类有11种构造函数提供使用不同类型的字符串的初始值，如一个字符数组。
 
@@ -33,7 +33,7 @@ public class StringDemo{
 hello.
 ```
 
-**注** String 类是不可变的，因此，一旦创建了 String 对象那么是不能改变的。如果有必要大部分修改字符的字符串，那么应该使用 StringBuffer & StringBuilder 类。
+**注** String 类是不可变的，因此，一旦创建了 String 对象那么是不能改变的。如果需要大量修改字符的字符串，那么应该使用 StringBuffer & StringBuilder 类。
 
 ## String 长度
 
