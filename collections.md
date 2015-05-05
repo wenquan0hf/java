@@ -3,6 +3,7 @@
 Java 2 之前，Java 为对象组的存储和操作提供了特别的类比如 字典，向量，堆栈和属性。尽管这些类确实有用，它们缺少一个中心的，统一的主题。因此，你使用向量的方法和你使用属性的方法是不同的。  
 
 集合框架被设计来满足几个目标 
+
 - 框架需要是高性能的。基础集合(动态数组，链表，数和哈希表)是高效的。  
 - 框架需要允许不同的集合类型以类似的方式和高度的互操作性工作。  
 - 扩展或者调整集合必须是简单的。  
@@ -10,6 +11,7 @@ Java 2 之前，Java 为对象组的存储和操作提供了特别的类比如 �
 为此，整个集合框架被设计围绕一系列的标准接口。几个接口的标准实现例如 LinkedList, HashSet 和 TreeSet 被提供，如果你选择的话，你可以使用，你也可以实现你自己的集合。  
 
 一个集合框架是一个统一的体系结构表示和操作集合。所有的集合框架包含以下:  
+
 - **接口:** 这些是代表集合的抽象数据类型。接口允许集合独立操作它们表示的细节。在面向对象的语言中，接口通常形成一个层次结构。  
 - **实现,即类：** 这些是集合接口的具体实施。从本质上说，它们是可重用的数据结构。  
 - **算法:** 这些是在实现集合接口的对象上进行有用计算的方法，比如搜索和排序。算法被称为多态的，那就是说，同一个方法能被用在许多不同的合适的集合接口的实现上。  
@@ -21,7 +23,7 @@ Java 2 之前，Java 为对象组的存储和操作提供了特别的类比如 �
 集合框架定义了几个接口。如下提供了每个接口的概览:  
 
 |SN      |接口描述   |
-|----------|:----------:|-----:|
+|:----------|:----------|
 |1 |[Collection 接口](http://www.tutorialspoint.com/java/java_collection_interface.htm)<br> 这让你可以使用对象组；它是集合层次阶段的顶端|
 |2 |[List 接口](http://www.tutorialspoint.com/java/java_list_interface.htm)<br> 它继承了 Collection 并且 List 的一个实例存储了元素的一个有序集合|
 |3 |[Set](http://www.tutorialspoint.com/java/java_set_interface.htm)<br> 它继承了 Collection 来处理集，它必须含有特殊的元素|
@@ -38,7 +40,7 @@ Java 提供了一系列的实现集合接口的标准集合类。一些类提供
 标准的 collection 类在下面的表格中被概括:  
 
 |SN      |类描述   |
-|----------|:----------:|-----:|
+|:----------|:----------|
 |1 |**AbstractCollection**<br> 实现大部分的 Collection 接口|
 |2 |**AbstractList**<br> 继承 AbstractCollection 并且实现大部分 List 接口|
 |3 |**AbstractSequentialList**<br>  通过一个使用有序的而不是随机访问它的元素的集合继承  AbstractList|
@@ -60,7 +62,7 @@ AbstractCollection, AbstractSet, AbstractList, AbstractSequentialList 和 Abstra
 以下的由 java.util 定义的旧有的类在前面的指南中已经被讨论过: 
 
 |SN      |类描述   |
-|----------|:----------:|-----:|
+|:----------|:------|
 |1 |[Vector](http://www.tutorialspoint.com/java/java_vector_class.htm)<br> 这实现一个动态数组。它和 ArrayList 类似，但也有一些不同。|
 |2 |[Stack](http://www.tutorialspoint.com/java/java_stack_class.htm)<br> Stack 是 Vector 的实现标准的后进先出栈的子类
 |3 |[Dictionary](http://www.tutorialspoint.com/java/java_dictionary_class.htm)Dictionary<br>  是一个抽象的代表一个键值对存储库的类并且操作起来非常像 Map|
@@ -77,7 +79,7 @@ AbstractCollection, AbstractSet, AbstractList, AbstractSequentialList 和 Abstra
 集合定义了三个静态变量：EMPTY_SET, EMPTY_LIST, 和 EMPTY_MAP。所有都是不变的。
 
 |SN      |算法描述   |
-|----------|:----------:|-----:|
+|:----------|:-----|
 |1 |[The Collection Algorithms](http://www.tutorialspoint.com/java/java_collection_algorithms.htm)<br> 这是所有算法实现的列表|
 
 ## 如何使用 Iterator
@@ -89,7 +91,7 @@ AbstractCollection, AbstractSet, AbstractList, AbstractSequentialList 和 Abstra
 Iterator 让你可以通过一个集合循环，获得或者除去元素。ListIterator 继承了 Iterator 来允许一个列表的双向遍历和元素的修改。
 
 |SN      |Iterator 方法描述   |
-|----------|:----------:|-----:|
+|:----------|:-------|
 |1 |[使用 Java Iterator](http://www.tutorialspoint.com/java/java_using_iterator.htm)<br> 这是所有由 Iterator 和 ListIterator 接口提供的有例子的方法的列表。|
 
 ## 如何使用 Comparator
@@ -99,7 +101,7 @@ TreeSet 和 TreeMap 都以顺序保存元素。然而，是 Comparator 精确定
 这个接口让我们将一个给定的集合用不同数量的方法排序。这个接口也能被用来排列任何类的任何实例(甚至是我们不能修改的类)。  
 
 |SN      |Iterator 方法描述   |
-|----------|:----------:|-----:|
+|:----------|:------|
 |1 |[使用 Java Comparator](http://www.tutorialspoint.com/java/java_using_comparator.htm)<br> 这是所有由 Comparator 接口提供的有例子的方法的列表。|
 
 ## 总结

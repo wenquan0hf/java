@@ -4,11 +4,13 @@
 
 J2SE API 的 java.net 包包含了一个类的集合和提供底层通信细节的接口，允许你编写专注解决即将到来的问题的程序。  
 
-java.net 包为两种常用的网络协议提供支持：  
+java.net 包为两种常用的网络协议提供支持： 
+ 
 - **TCP：** TCP 代表传输控制协议，允许两个应用程序间的可靠通信。TCP 通常在因特网协议上被使用，这被称为 TCP/IP。  
 - **UDP：** UDP 代表用户数据报协议，一个无连接的允许应用程序间数据包传输的协议。  
 
 本教程给以下两个主题提供更好的理解：  
+
 - **套接字编程：** 这是在网络中最广泛使用的概念并且被很详细地解释。  
 - **URL 处理：** 这将被个别地解释。点击这里来学习 java 语言中的 [URL 处理](http://www.tutorialspoint.com/java/java_url_processing.htm)。  
 
@@ -21,6 +23,7 @@ java.net 包为两种常用的网络协议提供支持：
 java.net.Socket 类代表一个套接字，而且 java.net.ServerSocket 类为服务器程序提供了一种机制来监听客户端并和它们建立连接。  
 
 以下步骤发生在两台电脑使用套接字建立TCP连接时：  
+
 - 服务器实例化一个 ServerSocket 对象，指示通信将产生在哪个端口号；  
 - 服务器调用 ServerSocket 类的 accept() 方法。这个方法等待直到一个客户端在给定的端口上连接到服务器；  
 - 在服务器等待后，一个客户端实例化一个 Socket 对象，指定服务器名称和连接的端口号；   
@@ -38,7 +41,7 @@ java.net.ServerSocket 类被服务器应用程序使用来获得一个端口和�
 ServerSocket 类有四个构造函数：
 
 | SN        | 方法描述   |  
-|----------|:----------:|-----:|
+|:----------|:----|
 |1 | **public ServerSocket(int port) throws IOException**<br>尝试创建一个连接到指定端口的服务器套接字。如果端口已经连接到另一个应用程序那么将产生一个异常。|
 |2 |**public ServerSocket(int port, int backlog) throws IOException**<br>和前一个构造函数相同，backlog 参数指定了在等待队列中有多少传入的客户端要存储|
 |3 |**public ServerSocket(int port, int backlog, InetAddress address) throws IOException**<br>和前一个构造函数相同，InetAddress 参数指定了本地捆绑的IP地址。InetAddress 用于有多个 IP 地址的服务器，允许服务器指定它的哪个 IP 地址 来接收客户端请求。|
@@ -49,7 +52,7 @@ ServerSocket 类有四个构造函数：
 这里是一些 ServerSocket 类的常见方法：  
 
 | SN        | 方法描述   |  
-|----------|:----------:|-----:|
+|:----------|:-------|
 |1 |**public int getLocalPort()**<br>返回服务器套接字正在监听的端口。如果你在构造函数中传入 0 作为端口号这个方法会是有用的，它会让服务器为你找一个端口。|
 |2 |**public Socket accept() throws IOException**<br>等待一个即将到来的客户端。这个方法直到或者一个客户端连接到特定端口服务器，或者套接字到时为止时阻塞，假设超时的值已经使用 setSoTimeout() 方法设置了。否则，这个方法将无限期阻塞。|
 |3 |**public void setSoTimeout(int timeout)**<br>把超时的值设为服务器套接字在 accept() 内等待客户端的时间。|
@@ -64,7 +67,7 @@ java.net.Socket 类方法代表客户端和服务器都用来互相通信的套�
 Socket 类有5个客户端用来连接到服务器的构造函数：  
 
 | SN        | 方法描述   |  
-|----------|:----------:|-----:|
+|:----------|:---|
 |1 |**public Socket(String host, int port) throws UnknownHostException, IOException.**<br>这个方法努力连接到特定端口指定的服务器。如果这个构造函数不抛出一个异常，连接就是成功的并且客户端将会连接到服务器。|
 |2 |**public Socket(InetAddress host, int port) throws IOException**<br>这个方法和之前的构造函数相同，除了主机由一个 InetAddress 对象表示。|
 |3 |**public Socket(String host, int port, InetAddress localAddress, int localPort) throws IOException.**<br>连接到指定的主机和端口，在指定地址和端口上的本地主机创建一个套接字。|
@@ -76,7 +79,7 @@ Socket 类有5个客户端用来连接到服务器的构造函数：
 在 Socket 类中一些有趣的方法列举在此。注意客户端和服务器都有一个 Socket 对象，所以这些方法都能被客户端或者服务器调用。
 
 | SN        | 方法描述   |  
-|----------|:----------:|-----:|
+|:----------|:--------|
 |1 |**public void connect(SocketAddress host, int timeout) throws IOException**<br>这个方法将套接字连接到特定的主机。这个方法仅当你使用无参数的构造函数实例化 Socket 时才需要。|
 |2 |**public InetAddress getInetAddress()**<br>这个方法返回其套接字连接的其他电脑的地址。|
 |3 |**public int getPort()**<br>返回远端的机器上套接字绑定的端口。|
@@ -92,7 +95,7 @@ Socket 类有5个客户端用来连接到服务器的构造函数：
 这个类表示一个网络协议（IP）的地址。这些是在做套接字编程时将会用到的有用的方法：  
 
 | SN        | 方法描述   |  
-|----------|:----------:|-----:|
+|:----------|:-------|
 |1 |**static InetAddress getByAddress(byte[] addr)**<br>考虑到原始的 IP 地址，返回一个 InetAddress 对象。|
 |2 |**static InetAddress getByAddress(String host, byte[] addr)**<br>基于提供的主机名和 IP 地址创建一个 InetAddress。|
 |3 |**static InetAddress getByName(String host)**<br>考虑到主机名，决定一个主机的 IP 地址。|

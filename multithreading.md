@@ -13,6 +13,7 @@ Java 是一种多线程编程语言，这意味着我们能用 java 开发多线
 ![1](images/java_thread.jpg)  
 
 上述提到的阶段在这解释：  
+
 - **new:** 一个新的线程以一个新的状态开始了它的生命周期。它始终留在这个状态中直到程序开始线程。它也被称为一个生成的进程。
 - **Runnable:** 在一个新生成的线程开始后，这个线程变得可运行。在这个状态下的线程被认为正在执行任务。  
 - **Waiting:** 有时候，一个线程当它等待另一个线程工作时跃迁到等待状态。一个线程仅当另一个线程发信号给等待的线程继续执行才跃迁回可运行转态。
@@ -226,7 +227,7 @@ Thread Thread-2 exiting.
 以下是在 Thread 类中可以获得的重要方法的列表。  
 
 |SN      |接口描述   |
-|----------|:----------:|-----:|
+|:----------|:----|
 |1 |**Methods with Description**<br>在一个独立的执行路径中开始一个线程，然后在这个 Thread 对象上调用 run() 方法。|
 |2 |**public void run()**<br>如果这个 Thread 对象是使用一个单独的 Runnable 目标实例化的,run()方法被 Runnable 对象调用。|
 |3 |**public final void setName(String name)**<br>改变 Thread 对象的名字。也有一个 getName()方法来检索名字。|
@@ -239,7 +240,7 @@ Thread Thread-2 exiting.
 以前的方法是被一个特殊的 Thread 对象调用的。以下在 Thread 类中的方法是静态的。调用静态方法会在当前运行的线程上执行操作。
 
 |SN      |接口描述   |
-|----------|:----------:|-----:|
+|:----------|:-----|
 |1 |**public static void yield()**<br>使得当前正在运行的线程让步于任何其他相同优先级的正在等待调度的线程。|
 |2 |**public static void sleep(long millisec)**<br>使当前运行的线程阻塞至少指定的毫秒数。|
 |3 |**public static boolean holdsLock(Object x)**<br>如果当前线程持有给定对象的锁，返回真值。|

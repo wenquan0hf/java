@@ -184,7 +184,7 @@ public static int[] reverse(int[] list) {
 java.util.Arrays 中的类包含各种静态方法用于排序和搜索数组、数组的比较和填充数组元素。这些方法为所有基本类型所重载。
 
 |SN|	方法和描述|
-|----:|-----:|
+|:----|:-----|
 |1|	public static int binarySearch (Object[] a, Object key)<br>使用二进制搜索算法搜索对象的指定数组（字节，整数，双精度等）来指定值。该数组必须在进行此调用之前进行分类。如果它被包含在列表 (-(insertion point + 1)， 将返回索引搜索关键字。|
 |2|	public static boolean equals (long[] a, long[] a2)<br>如果多头的两个指定数组彼此相等返回true。两个数组认为是相等判定方法：如果两个数组包含相同的元素数目，并在两个数组元素的所有相应对相等。如果两个数组相等，返回true。同样的方法可以用于所有其它的原始数据类型 (Byte, short, Int, etc.)|
 |3|	public static void fill(int[] a, int val)<br>将指定的int值到指定的int型数组中的每个元素。同样的方法可以用于所有其它的原始数据类型(Byte, short, Int etc.)|

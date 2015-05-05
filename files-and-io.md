@@ -180,7 +180,7 @@ InputStream f = new FileInputStream(f);
 一旦你有了一个输入流对象，这里将有很多的提供帮助的方法来进行读操作或是其他在流中的操作。
 
 |SN|	方法描述|
-| ------------- |:-------------:| 
+|:-----------|:------------| 
 |1|	public void close() throws IOException{}  这个方法关闭文件输出流。释放有关文件的所有系统资源。抛出IO异常。|
 |2|	protected void finalize()throws IOException {} 这个方法会切断和文件的连接。确保这个文件输出流的关闭方法在这个流没有引用的时候才会被调用。抛出IO异常。|
 |3|	public int read(int r)throws IOException{} 这个方法从InputStream 中读到特定字节数的数据。返回一个int类型。返回下一个字节的数据或是在文件末尾时返回-1|
@@ -214,7 +214,7 @@ OutputStream f = new FileOutputStream(f)
 一旦你有了一个输出流对象，这里将有很多的提供帮助的方法来进行写操作或是其他在流中的操作。
 
 |SN|	方法描述|
-| ------------- |:-------------:| 
+|:------------- |:------------| 
 |1|	public void close() throws IOException{}  这个方法关闭文件输出流。释放有关文件的所有系统资源。抛出IO异常。|
 |2|	protected void finalize()throws IOException {} 这个方法会切断和文件的连接。确保这个文件输出流的关闭方法在这个流没有引用的时候才会被调用。抛出IO异常。|
 |3|	public void write(int w)throws IOException{} 这个方法用来写特定的字节到输出流|

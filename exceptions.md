@@ -31,7 +31,7 @@ Exception 类含有两个子类：IOException 类和 RuntimeException 类。
 下面是 Throwable 类的重要方法列表。
 
 |SN|	方法描述|
-| ------------- |:-------------:| 
+|:------------- |:-------------| 
 |1|	public String getMessage()  返回关于发生异常的细节信息，这些信息在Throwable的构造函数中被初始化|
 |2|public Throwable getCause() 返回发生异常的原因，由 Throwable 对象来表示|
 |3|	public String toString() 返回与getMessage()的结果相联系的类的名称|

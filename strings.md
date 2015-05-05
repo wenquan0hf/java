@@ -36,6 +36,7 @@ hello.
 **注** String 类是不可变的，因此，一旦创建了 String 对象那么是不能改变的。如果有必要大部分修改字符的字符串，那么应该使用 StringBuffer & StringBuilder 类。
 
 ## String 长度
+
 用于获取有关对象的信息的方法称为存取方法。可以和字符串一起使用的一个存取方法是 length() ，它返回包含在字符串对象中的字符数。
   
 下面的两行代码被执行之后，len 等于17：
@@ -130,7 +131,7 @@ System.out.println(fs);
 这里是由 String 类支持的方法列表：
 
 |SN|	方法及描述|
-|----:|-----:|
+|:----|:-----|
 |1|	char charAt(int index) <br>返回指定索引处的字符。|
 |2|	int compareTo(Object o)   <br>将这个字符串与另一个对象比较。|
 |3|	int compareTo(String anotherString)<br>比较两个字符串的字典顺序。|

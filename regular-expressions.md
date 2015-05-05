@@ -75,7 +75,7 @@ Found value: 0
 这里的表格记录了 java 中可用的所有正则表达式的元字符语法：
 
 |子表达式|匹配对应|
-| ------------- |:-------------:| 
+|:-------------|:-------------| 
 |^|	匹配一行的开头|
 | $     |匹配一行的结尾   |  
 |.|匹配除了换行符的任何单个字符，也可以利用 m 选项允许它匹配换行符|
@@ -120,7 +120,7 @@ Found value: 0
 index方法提供有用的指标值，精确地显示输入字符串中相匹配的位置：
 
 |SN|	方法描述|
-| ------------- |:-------------:| 
+|:-------------|:-------------| 
 |1|	public int start()  返回之前匹配开始索引|
 |2|	public int start(int group)返回被之前匹配操作得出的组捕获的子序列|
 |3|	public int end() 返回在最后一个字符匹配之后的偏移量|
@@ -131,7 +131,7 @@ index方法提供有用的指标值，精确地显示输入字符串中相匹配
 Study 方法根据输入字符串返回一个布尔类型数据来指示该模式是否被找到。
 
 |SN|	方法描述|
-| ------------- |:-------------:| 
+|:------------|:-------------| 
 |1|	public boolean lookingAt()   试图匹配输入序列，从模式的起始位置开始|
 |2|	public boolean find() 试图找到下一个输入序列的子序列来进行模式匹配|
 |3|	public boolean find(int start）重置匹配，并且试图找到下一个从某个特定位置开始的输入序列的子序列来进行模式匹配|
@@ -142,7 +142,7 @@ Study 方法根据输入字符串返回一个布尔类型数据来指示该模�
 Replacement 方法是在一个输入字符串中替换文本的有效方法。
 
 |SN|	方法描述|
-| ------------- |:-------------:| 
+|:-------------|:-------------| 
 |1|	public Matcher appendReplacement(StringBuffer sb, String replacement)  实现一个无目的的添加和代替步骤|
 |2|	public StringBuffer appendTail(StringBuffer sb) 实现一个有目的的添加和代替步骤|
 |3|	public String replaceAll(String replacement) 代替每一个输入序列的子序列，与给出的代替字符串的模式匹配|
@@ -303,8 +303,8 @@ public class RegexMatches
 
 PatternSyntaxException 是一个未检查的、在正则表达式模式指示语法错误的特例。PatternSyntaxException 类提供了以下的方法来帮助你找出问题所在：
 
-|SN|	Methods with Description|
-| ------------- |:-------------:| 
+|SN|	方法描述|
+|:-------------|:-------------| 
 |1|	public String getDescription() 检索错误的描述|
 |2|	public int getIndex()  检索误差指标|
 |3|	public String getPattern() 检索错误的正则表达式模式|
