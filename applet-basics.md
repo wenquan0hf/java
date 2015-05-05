@@ -2,7 +2,8 @@
 
 一个 Applet 是一个运行在网页浏览器上的 Java 程序。一个 Applet 可以使一个全功能的 Java 应用程序因为它在处理上拥有整个 Java API。  
 
-在一个 Applet 和一个独立的 Java 应用程序间有一些重要的不同，包括以下方面：  
+在一个 Applet 和一个独立的 Java 应用程序间有一些重要的不同，包括以下方面：
+  
 - 一个 Applet 是继承  java.applet.Applet 类的一个 Java 类。
 - main() 方法不在 Applet 上被调用，并且一个 applet 类将不定义 main()。  
 - Applet 程序被设计嵌入到 HTML 页面中。

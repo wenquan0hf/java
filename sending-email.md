@@ -1,9 +1,9 @@
-# Java - 发送邮件
+# Java 发送邮件
 
 用你的 Java 应用程序来发送一封电子邮件是足够简单的但是开始时你应该在你的机器上安装有 JavaMail API 和 Java Activation Framework (JAF)。  
 
--你可以从 Java 的标准企业网站上下载最新的 [JavaMail（1.2 版本）](http://www.oracle.com/technetwork/java/index.html)版本。  
--你可以从 Java 的标准企业网站上下载最新的 [JAF（1.1.1 版本）](http://www.oracle.com/technetwork/java/index.html)版本。
+- 你可以从 Java 的标准企业网站上下载最新的 [JavaMail（1.2 版本）](http://www.oracle.com/technetwork/java/index.html)版本。  
+- 你可以从 Java 的标准企业网站上下载最新的 [JAF（1.1.1 版本）](http://www.oracle.com/technetwork/java/index.html)版本。
 
 下载并解压这些文件，在新创建的顶级目录中你将找到许多应用程序的 jar 文件。你需要在你的 CLASSPATH 中添加 mail.jar 和 activation.jar 文件。  
 

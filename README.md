@@ -1,20 +1,28 @@
-# Java
+# Java 编程指导 
+ 
+Java 是一种高级的编程语言，它最初是由 Sun 公司开发并于 1995 年公开发布的。Java 可以在不同的平台上运行，例如：Windows，Mac OS 和不同版本的 Unix。本指导将让你对 Java 有一个彻底的认识与了解。  
 
-官方英文原版：   
-http://www.tutorialspoint.com/java/index.htm
+本指导将带你用简单并且实用的方法来学习 Java 编程语言。  
 
-## 目的
+## 适用人群  
 
-翻译官方文档，目录见文件 [TOC.md](TOC.md)
+本指导是为那些初学者准备的，可以帮助他们理解编程语言从低级到高级的概念。  
 
-## 操作示例
+## 学习前提  
 
-https://github.com/jikexueyuanwiki/guide
+在你准备应用本指导中所举的不同种类的例子进行练习之前，我们假设你已经知道什么是计算机程序和什么是计算机编程语言了。  
 
-## 如何添加图片
+## 编译、执行 Java 程序  
 
-前提：官网上的所有图片都已经下载下来放入「images」文件夹，图片的文件名没做任何修改。
+在本指导所提供的大多数例子中你将会看到试一试选项，所以大胆的应用这个选项并且享受这个学习的过程。  
 
-1、请引用「images」文件夹中的图片，不要直接引用官方上的图片链接；    
-2、引用「images」文件夹时，请使用相对文件路径。
+看下面这个例子:
 
+```
+public class MyFirstJavaProgram {
+
+    public static void main(String []args) {
+       System.out.println("Hello World");
+    }
+} 
+```
