@@ -20,7 +20,7 @@
  - [Java 异常处理](exceptions.md) 
 - Java 面向对象
  - [Java 继承](inheritance.md) 
- - [Java 重写](overriding.md) 
+ - [Java 覆写](overriding.md) 
  - [Java 多态](polymorphism.md) 
  - [Java 抽象](abstraction.md) 
  - [Java 封装](ncapsulation.md) 
