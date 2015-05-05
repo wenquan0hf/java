@@ -35,7 +35,7 @@
  - [Java 发送邮件](sending-email.md)
  - [Java 多线程](multithreading.md) 
  - [Java Applet 基础](applet-basics.md) 
- - [Java 文档注释](Documentation.md)
+ - [Java 文档注释](documentation.md)
 - 有用的资源
  - [Java 快速参考指南](quick-guide.md) 
  - [Java 库类](library-classes.md) 
