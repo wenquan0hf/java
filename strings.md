@@ -131,7 +131,7 @@ System.out.println(fs);
 这里是由 String 类支持的方法列表：
 
 |SN|	方法及描述|
-|:----:|-----|
+|:----|:-----|
 |1|	char charAt(int index) <br>返回指定索引处的字符。|
 |2|	int compareTo(Object o)   <br>将这个字符串与另一个对象比较。|
 |3|	int compareTo(String anotherString)<br>比较两个字符串的字典顺序。|
