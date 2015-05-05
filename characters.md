@@ -82,8 +82,8 @@ She said "Hello!" to me.
 
 |SN   |	方法描述|
 |:------:|-----------|
-|1	|isLetter() <br> 确定具体的char值是一个字母|
-|2	|isDigit()  <br> 确定具体的char值是一个数字|
+|1	|isLetter() <br>确定具体的char值是一个字母|
+|2	|isDigit()  <br>确定具体的char值是一个数字|
 |3	|isWhitespace()<br>确定具体的char值是一个空格|
 |4 |isUpperCase()<br>确定具体的char值是一个大写字母|
 |5	|isLowerCase()<br>确定具体的char值是一个小写字母|
