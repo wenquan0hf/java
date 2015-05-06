@@ -32,12 +32,12 @@ Exception 类含有两个子类：IOException 类和 RuntimeException 类。
 
 |SN|	方法描述|
 |:------------- |:-------------| 
-|1|	public String getMessage()  返回关于发生异常的细节信息，这些信息在Throwable的构造函数中被初始化|
-|2|   public Throwable getCause() 返回发生异常的原因，由 Throwable 对象来表示|
-|3|	public String toString() 返回与getMessage()的结果相联系的类的名称|
-|4|	public void printStackTrace() 打印 toString()跟踪错误输出流的栈地址的结果。|
-|5|	public StackTraceElement [] getStackTrace() 返回一个数组,其中包含每个元素在栈的地址。元素的索引0代表调用栈的顶部,最后一个元素表示方法调用栈的底部。|
-|6|	public Throwable fillInStackTrace() 用当前栈地址来填充 Throwable 对象的栈地址,添加到任何先前的栈地址信息。|
+|1|	public String getMessage() <br> 返回关于发生异常的细节信息，这些信息在Throwable的构造函数中被初始化|
+|2|   public Throwable getCause()  <br>返回发生异常的原因，由 Throwable 对象来表示|
+|3|	public String toString() <br> 返回与getMessage()的结果相联系的类的名称|
+|4|	public void printStackTrace()  <br>打印 toString()跟踪错误输出流的栈地址的结果。|
+|5|	public StackTraceElement [] getStackTrace() <br> 返回一个数组,其中包含每个元素在栈的地址。元素的索引0代表调用栈的顶部,最后一个元素表示方法调用栈的底部。|
+|6|	public Throwable fillInStackTrace() <br> 用当前栈地址来填充 Throwable 对象的栈地址,添加到任何先前的栈地址信息。|
 
 ## 捕获异常
 
