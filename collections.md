@@ -24,14 +24,14 @@ Java 2 之前，Java 为对象组的存储和操作提供了特别的类比如 �
 
 |SN      |接口描述   |
 |:----------|:----------|
-|1 |[Collection 接口](http://www.tutorialspoint.com/java/java_collection_interface.htm)<br> 这让你可以使用对象组；它是集合层次阶段的顶端|
-|2 |[List 接口](http://www.tutorialspoint.com/java/java_list_interface.htm)<br> 它继承了 Collection 并且 List 的一个实例存储了元素的一个有序集合|
-|3 |[Set](http://www.tutorialspoint.com/java/java_set_interface.htm)<br> 它继承了 Collection 来处理集，它必须含有特殊的元素|
-|4 |[SortedSet](http://www.tutorialspoint.com/java/java_sortedset_interface.htm)<br> 它继承了 Set 来处理 排序的 set|
-|5 |[Map](http://www.tutorialspoint.com/java/java_map_interface.htm)<br> 它将独特的键和值匹配|
-|6 |[Map Entry](http://www.tutorialspoint.com/java/java_mapentry_interface.htm)<br> 这描述了映射中的一个元素(一个键值对)。它是 Map 的一个内部类。|
-|7 |[SortedMap](http://www.tutorialspoint.com/java/java_sortedmap_interface.htm)<br> 它继承了 Map 因此键按升序保持|
-|8 |[Enumeration](http://www.tutorialspoint.com/java/java_enumeration_interface.htm)<br> 它是旧有的接口并定义了你可以在对象的集合中列举(一次获得一个)元素的方法。这个旧有的接口被迭代器取代了。|
+|1 |**Collection 接口**<br> 这让你可以使用对象组；它是集合层次阶段的顶端|
+|2 |**List 接口**<br> 它继承了 Collection 并且 List 的一个实例存储了元素的一个有序集合|
+|3 |**Set**<br> 它继承了 Collection 来处理集，它必须含有特殊的元素|
+|4 |**SortedSet**<br> 它继承了 Set 来处理 排序的 set|
+|5 |**Map**<br> 它将独特的键和值匹配|
+|6 |**Map Entry**<br> 这描述了映射中的一个元素(一个键值对)。它是 Map 的一个内部类。|
+|7 |**SortedMap**<br> 它继承了 Map 因此键按升序保持|
+|8 |**Enumeration**<br> 它是旧有的接口并定义了你可以在对象的集合中列举(一次获得一个)元素的方法。这个旧有的接口被迭代器取代了。|
     
 ## Collection 类
 
@@ -44,18 +44,18 @@ Java 提供了一系列的实现集合接口的标准集合类。一些类提供
 |1 |**AbstractCollection**<br> 实现大部分的 Collection 接口|
 |2 |**AbstractList**<br> 继承 AbstractCollection 并且实现大部分 List 接口|
 |3 |**AbstractSequentialList**<br>  通过一个使用有序的而不是随机访问它的元素的集合继承  AbstractList|
-|4 |[LinkedList](http://www.tutorialspoint.com/java/java_linkedlist_class.htm)<br> 通过继承 AbstractSequentialList 实现一个链表|
-|5 |[ArrayList](http://www.tutorialspoint.com/java/java_arraylist_class.htm) <br> 通过继承 AbstractList 实现一个动态数组|
+|4 |**LinkedList**<br> 通过继承 AbstractSequentialList 实现一个链表|
+|5 |**ArrayList** <br> 通过继承 AbstractList 实现一个动态数组|
 |6 |**AbstractSet**<br> 继承 AbstractCollection 并实现大部分的 Set 接口|
-|7 |[HashSet](http://www.tutorialspoint.com/java/java_hashset_class.htm)<br> 用一个哈希表继承 AbstractSet |
-|8 |[LinkedHashSet](http://www.tutorialspoint.com/java/java_linkedhashset_class.htm)<br> 继承 HashSet 来允许插入顺序迭代|
-|9 |[TreeSet](http://www.tutorialspoint.com/java/java_treeset_class.htm)<br> 实现在树中存储的一个集。继承 AbstractSet|
+|7 |**HashSet**<br> 用一个哈希表继承 AbstractSet |
+|8 |**LinkedHashSet**<br> 继承 HashSet 来允许插入顺序迭代|
+|9 |**TreeSet**<br> 实现在树中存储的一个集。继承 AbstractSet|
 |10 |**AbstractMap**<br> 实现大部分的 Map 接口|
-|11 |[HashMap](http://www.tutorialspoint.com/java/java_hashmap_class.htm)<br> 用一个哈希表继承 AbstractMap|
-|12 |[TreeMap](http://www.tutorialspoint.com/java/java_treemap_class.htm)<br> 用一棵树继承 AbstractMap|
-|13 |[WeakHashMap](http://www.tutorialspoint.com/java/java_weakhashmap_class.htm)<br> 用一个使用弱键的哈希表来继承 AbstractMap|
-|14 |[LinkedHashMap](http://www.tutorialspoint.com/java/java_linkedhashmap_class.htm)<br> 继承 AbstractMap 来允许插入顺序迭代|
-|15 |[IdentityHashMap](http://www.tutorialspoint.com/java/java_identityhashmap_class.htm)<br> 继承 AbstractMap 类并且当比较文档时平等使用参考|
+|11 |**HashMap**<br> 用一个哈希表继承 AbstractMap|
+|12 |**TreeMap**<br> 用一棵树继承 AbstractMap|
+|13 |**WeakHashMap**<br> 用一个使用弱键的哈希表来继承 AbstractMap|
+|14 |**LinkedHashMap**<br> 继承 AbstractMap 来允许插入顺序迭代|
+|15 |**IdentityHashMap**<br> 继承 AbstractMap 类并且当比较文档时平等使用参考|
 
 AbstractCollection, AbstractSet, AbstractList, AbstractSequentialList 和 AbstractMap 类提供了核心集合接口的实现，尽量减少努力来实现它们。  
 
@@ -63,12 +63,12 @@ AbstractCollection, AbstractSet, AbstractList, AbstractSequentialList 和 Abstra
 
 |SN      |类描述   |
 |:----------|:------|
-|1 |[Vector](http://www.tutorialspoint.com/java/java_vector_class.htm)<br> 这实现一个动态数组。它和 ArrayList 类似，但也有一些不同。|
-|2 |[Stack](http://www.tutorialspoint.com/java/java_stack_class.htm)<br> Stack 是 Vector 的实现标准的后进先出栈的子类
-|3 |[Dictionary](http://www.tutorialspoint.com/java/java_dictionary_class.htm)Dictionary<br>  是一个抽象的代表一个键值对存储库的类并且操作起来非常像 Map|
-|4 |[Hashtable](http://www.tutorialspoint.com/java/java_hashtable_class.htm)<br> Hashtable 是初始的 java.util 的一部分并且是 Dictionary 的具体实现|
-|5 |[Properties](http://www.tutorialspoint.com/java/java_properties_class.htm)<br> Properties 是 Hashtable 的一个子类。它被用来保持键是一个字符串并且值也是一个字符串的值的列表|
-|6 |[BitSet](http://www.tutorialspoint.com/java/java_bitset_class.htm)<br> 一个 BitSet 类创建一个特殊的保持 bit 数值的数组类型。这个数组的大小能根据需要增长|
+|1 |**Vector**<br> 这实现一个动态数组。它和 ArrayList 类似，但也有一些不同。|
+|2 |**Stack**<br> Stack 是 Vector 的实现标准的后进先出栈的子类
+|3 |**Dictionary** Dictionary<br>  是一个抽象的代表一个键值对存储库的类并且操作起来非常像 Map|
+|4 |**Hashtable**<br> Hashtable 是初始的 java.util 的一部分并且是 Dictionary 的具体实现|
+|5 |**Properties**<br> Properties 是 Hashtable 的一个子类。它被用来保持键是一个字符串并且值也是一个字符串的值的列表|
+|6 |**BitSet**<br> 一个 BitSet 类创建一个特殊的保持 bit 数值的数组类型。这个数组的大小能根据需要增长|
 
 ## Collection 算法
 
