@@ -1,4 +1,4 @@
-# Java Numbers 类
+# Java 数字
    
 通常情况下，当我们处理数字时，使用原始数据类型，如 byte，int，long，double 等。
 
