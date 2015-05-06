@@ -276,8 +276,6 @@ width="300" height="300">
 
 最初，applet 将会展示 “初始化 applet,开始 applet”。然后一旦你点击长方形内的 “鼠标点击” 将会显示。  
 
-基于上面的例子，这里是 applet 例子:[Applet Example](http://www.tutorialspoint.com/java/event.htm)
-
 ## 显示图像
 
 一个 applet 能显示 GIF，JPEG，BMP 和其它格式的图像。为了显示 applet 中的图像，你可以使用在 java.awt.Graphics 类中的 drawImage() 方法。  
@@ -332,8 +330,6 @@ public class ImageDemo extends Applet
 <hr>
 </html>
 ```
-
-基于上面的例子，这里是 applet 例子：[Applet Example](http://www.tutorialspoint.com/java/ImageDemo.htm)。  
 
 ## 播放音频
 
