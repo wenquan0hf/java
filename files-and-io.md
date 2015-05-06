@@ -181,11 +181,11 @@ InputStream f = new FileInputStream(f);
 
 |SN|	方法描述|
 |:-----------|:------------| 
-|1|	public void close() throws IOException{}  这个方法关闭文件输出流。释放有关文件的所有系统资源。抛出IO异常。|
-|2|	protected void finalize()throws IOException {} 这个方法会切断和文件的连接。确保这个文件输出流的关闭方法在这个流没有引用的时候才会被调用。抛出IO异常。|
-|3|	public int read(int r)throws IOException{} 这个方法从InputStream 中读到特定字节数的数据。返回一个int类型。返回下一个字节的数据或是在文件末尾时返回-1|
-|4|	public int read(byte[] r) throws IOException{} 这个方法是从输入流中读 r 个长度字节到数组中。返回所有读到的字节数，或是在文件末尾时返回-1|
-|5|	public int available() throws IOException{} 给出能从输入流中读到的字节数，返回一个int类型数据|
+|1|	public void close() throws IOException{} <br> 这个方法关闭文件输出流。释放有关文件的所有系统资源。抛出IO异常。|
+|2|	protected void finalize()throws IOException {}<br> 这个方法会切断和文件的连接。确保这个文件输出流的关闭方法在这个流没有引用的时候才会被调用。抛出IO异常。|
+|3|	public int read(int r)throws IOException{}<br> 这个方法从InputStream 中读到特定字节数的数据。返回一个int类型。返回下一个字节的数据或是在文件末尾时返回-1。|
+|4|	public int read(byte[] r) throws IOException{} <br>这个方法是从输入流中读 r 个长度字节到数组中。返回所有读到的字节数，或是在文件末尾时返回-1。|
+|5|	public int available() throws IOException{} <br>给出能从输入流中读到的字节数，返回一个int类型数据。|
 
 这里是其他重要的可用输入流，你可以参考以下链接：
 
@@ -215,10 +215,10 @@ OutputStream f = new FileOutputStream(f)
 
 |SN|	方法描述|
 |:------------- |:------------| 
-|1|	public void close() throws IOException{}  这个方法关闭文件输出流。释放有关文件的所有系统资源。抛出IO异常。|
-|2|	protected void finalize()throws IOException {} 这个方法会切断和文件的连接。确保这个文件输出流的关闭方法在这个流没有引用的时候才会被调用。抛出IO异常。|
-|3|	public void write(int w)throws IOException{} 这个方法用来写特定的字节到输出流|
-|4|	public void write(byte[] w) 从字节数组中写 w 长度字节到输出流|
+|1|	public void close() throws IOException{} <br> 这个方法关闭文件输出流。释放有关文件的所有系统资源。抛出IO异常。|
+|2|	protected void finalize()throws IOException {}<br> 这个方法会切断和文件的连接。确保这个文件输出流的关闭方法在这个流没有引用的时候才会被调用。抛出IO异常。|
+|3|	public void write(int w)throws IOException{} <br>这个方法用来写特定的字节到输出流。|
+|4|	public void write(byte[] w)<br> 从字节数组中写 w 长度字节到输出流。|
 
 
 这里是其他重要的可用输入流，你可以参考以下链接：
