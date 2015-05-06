@@ -8,7 +8,7 @@ java.util.regex 包主要包含了下面的三个类：
 
 - __Pattern 类__:一个 Pattern 对象是正则表达式编译表示。 Pattern 类没有提供公共的构造函数。要创建一个 Pattern 对象，你必须首先调用他的公用静态编译方法来获得 Pattern 对象。这些方法的第一个参数是正则表达式。
 
-- __Matcher Class__:一个 Matcher 对象是用来解释模式和执行与输入字符串相匹配的操作。和 Pattern 类一样 Matcher 类也是没有构造方法的，你需要通过调用 Pattern 对象的 matcher 方法来获得 Matcher 对象。
+- __Matcher 类__:一个 Matcher 对象是用来解释模式和执行与输入字符串相匹配的操作。和 Pattern 类一样 Matcher 类也是没有构造方法的，你需要通过调用 Pattern 对象的 matcher 方法来获得 Matcher 对象。
 
 - __PatternSyntaxException__: 一个 PatternSyntaxException 对象是一个不被检查的异常，来指示正则表达式中的语法错误。
 
