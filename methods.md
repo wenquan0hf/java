@@ -71,7 +71,7 @@ public static int minFunction(int n1, int n2) {
 将返回void的方法作为一个调用语句，让我看下面的例子：
 
 ```
-System.out.println("This is tutorialspoint.com!");
+System.out.println("wiki.jikexueyuan.com!");
 ```
 
 该方法的返回值可以通过下面的例子被理解：
