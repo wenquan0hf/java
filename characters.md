@@ -1,4 +1,4 @@
-# Java Character 类
+# Java 字符
 
 一般情况下，当我们与字符打交道时，我们用原始数据类型 char。 
 
