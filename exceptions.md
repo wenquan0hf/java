@@ -24,8 +24,6 @@ Exception 类含有两个子类：IOException 类和 RuntimeException 类。
 
 ![image](images/exceptions.jpg)
 
-这是最常见的 [Java的内置异常](http://www.tutorialspoint.com/java/java_builtin_exceptions.htm)
-
 ## 异常方法
 
 下面是 Throwable 类的重要方法列表。
