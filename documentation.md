@@ -3,8 +3,8 @@
 Java 语言支持三种注释形式：  
 
 |注释      |描述   |
-|----------|:----------:|-----:|
-|*text* |编译器忽略 /* 到 */ 的所有东西|
+|----------|:----------|:-----|
+|/* text */ |编译器忽略 /* 到 */ 的所有东西|
 |//text |编译器忽略从 // 到一行末尾的所有东西|
 |/\*\*<br>documentation<br>*/ |这是文档注释并且通常而言它被叫做 doc comment。JDK javadoc 工具当准备自动准备生成文件时使用 doc comment |   
 
@@ -64,7 +64,7 @@ Javadoc 标签是 Javadoc 认可的关键字，它定义了下面信息的类型
 Javadoc 工具认可下面的标签： 
 
 |标签      |描述   |语法   |
-|----------|:----------:|-----:|
+|:----------|:----------|:-----|
 |@author|添加类的作者|@author name-text|
 |{@code}|不把文本转换成 HTML 标记和嵌套的 Java 标签而用代码字体展示它|{@code text}|
 |{@docRoot}|表示从任何生成页面到生成文档的根目录的相对路径|{@docRoot}|
@@ -164,4 +164,4 @@ Generating /help-doc.html...
 $
 ```
 
-你可以在这检查所有的生成的文档：[AddNum](http://www.tutorialspoint.com/java/index.html)。如果你正在使用 JDK 1.7 那么 Javadoc 不生成 **stysheet.css**,所以我建议从 [http://docs.oracle.com/javase/7/docs/api/stylesheet.css](http://docs.oracle.com/javase/7/docs/api/stylesheet.css) 下载并使用标准的 stylesheet。
+你可以在这检查所有的生成的文档：[AddNum](http://www.tutorialspoint.com/java/index.html)。如果你正在使用 JDK 1.7 那么 Javadoc 不生成 **stysheet.css**，所以我建议从 [http://docs.oracle.com/javase/7/docs/api/stylesheet.css](http://docs.oracle.com/javase/7/docs/api/stylesheet.css) 下载并使用标准的 stylesheet。

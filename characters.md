@@ -53,7 +53,7 @@ char c = test('x');
 |\r	|在文本中插入一个回车。|
 |\f	|在文本中插入一个换页。|
 |\'	|在文本中插入一个单引号字符。|
-|\\|	在文本中插入一个反斜杠字符。|
+|\\   |在文本中插入一个反斜杠字符。|
 
 当一个转义序列遇到一个打印语句，编译器就会相应地解译。
 
@@ -81,14 +81,14 @@ She said "Hello!" to me.
 以下列表是实现 Character 类所有子类的重要的实例方法： 
 
 |SN   |	方法描述|
-|------|------|
-|1	|isLetter() <br> 确定具体的char值是一个字母|
-|2	|isDigit()  <br> 确定具体的char值是一个数字|
+|:------|:-----------|
+|1	|isLetter() <br>确定具体的char值是一个字母|
+|2	|isDigit()  <br>确定具体的char值是一个数字|
 |3	|isWhitespace()<br>确定具体的char值是一个空格|
-|4  |isUpperCase()<br>确定具体的char值是一个大写字母|
+|4 |isUpperCase()<br>确定具体的char值是一个大写字母|
 |5	|isLowerCase()<br>确定具体的char值是一个小写字母|
 |6	|toUpperCase()<br>返回指定字符值的大写形式|
-|7  |toLowerCase()<br>返回指定字符值的小写写形式|
+|7 |toLowerCase()<br>返回指定字符值的小写写形式|
 |8	|toString()<br>返回代表指定的字符值的一个String对象,即一个字符的字符串|
 
 若想查看完整的方法，请参阅 java.lang.Character API 规范。  

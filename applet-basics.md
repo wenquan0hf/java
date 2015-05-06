@@ -16,11 +16,11 @@
 ## 一个 Applet 的生命周期
 
 Applet 类中的四个方法给了你构建 applet 程序时的框架：  
-- **init:** 这个方法适用于你的 applet 程序所需要的任何初始化。它在 applet 标记中的参数标签被处理后被调用。  
-- **start:** 这个方法在浏览器调用 init 方法后被自动调用。它也在无论何时使用者在去其他页面后返回到包含 applet 的页面时被调用。    
-- **stop:** 这个方法在使用者离开有 applet 所在的页面时被自动调用。因此，它在同一个 applet 中能被重复调用。 
-- **destroy:** 这个方法仅当浏览器正常关闭时被自动调用。因为 applet 程序是生存在 HTML 页面上的，你不应该在使用者离开有 applet 的网页后留下资源。  
-- **paint:** 在 start() 方法之后被立即调用，或是在 applet 需要在浏览器上重现它自身的任何时候。paint() 方法实际上是继承自 java.awt。  
+- **init：** 这个方法适用于你的 applet 程序所需要的任何初始化。它在 applet 标记中的参数标签被处理后被调用。  
+- **start：** 这个方法在浏览器调用 init 方法后被自动调用。它也在无论何时使用者在去其他页面后返回到包含 applet 的页面时被调用。    
+- **stop：** 这个方法在使用者离开有 applet 所在的页面时被自动调用。因此，它在同一个 applet 中能被重复调用。 
+- **destroy：** 这个方法仅当浏览器正常关闭时被自动调用。因为 applet 程序是生存在 HTML 页面上的，你不应该在使用者离开有 applet 的网页后留下资源。  
+- **paint：** 在 start() 方法之后被立即调用，或是在 applet 需要在浏览器上重现它自身的任何时候。paint() 方法实际上是继承自 java.awt。  
 
 ## 一个 “Hello,World” Applet
 
@@ -342,9 +342,9 @@ public class ImageDemo extends Applet
 ## 播放音频
 
 一个 applet 能播放由 java.applet 包内的 AudioClip 接口表示的音频。AudioClip 接口有三个方法，包括：
-- **public void play():** 从开始时，播放一次音频片段。  
-- **public void loop():** 使音频片段持续重复播放。
-- **public void stop():** 停止播放音频片段。  
+- **public void play()：** 从开始时，播放一次音频片段。  
+- **public void loop()：** 使音频片段持续重复播放。
+- **public void stop()：** 停止播放音频片段。  
 
 为了获得一个 AudioClip 对象，你必须调用 Applet 类的 getAudioClip() 方法。getAudioClip() 方法立刻返回，无论 URL 是否解决一个真正的音频片段。当播放音频片段时它才被下载。  
 

@@ -12,7 +12,7 @@ Java 工具包中所提供的数据结构非常强大并且有很多的功能。
 
 现在这些类都是旧的了， Java-2 已经引入了一种新的框架叫做 Collections Framework，在下一个章节中来讲解它。
 
-## Enumeration
+##  Enumeration
 
 枚举接口本身并不是一个数据结构，但是它在其他数据结构中非常重要。 The Enumeration 接口定义了一种方法可以从一个数据结构中连续获取元素。
 

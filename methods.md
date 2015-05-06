@@ -45,6 +45,43 @@ modifier returnType nameOfMethod (Parameter List) {
 
 ### 示例
 
+这是上面定义的方法max()，该方法接受两个参数num1和num2返回两者之间的最大值。
+
+```
+/** the snippet returns the minimum between two numbers */
+public static int minFunction(int n1, int n2) {
+   int min;
+   if (n1 > n2)
+      min = n2;
+   else
+      min = n1;
+
+   return min; 
+}
+```
+## 方法调用
+
+要想使用一个方法，该方法必须要被调用。方法调用有两种方式，一种是有返回值的，一种是没有返回值的。
+
+调用方法很简单，当程序需要调用一个方法时，控制程序转移到被调用的方法，方法将会返回两个条件给调用者：
+
+- 返回一条执行语句
+- 执行到方法结束
+
+将返回void的方法作为一个调用语句，让我看下面的例子：
+
+```
+System.out.println("This is tutorialspoint.com!");
+```
+
+该方法的返回值可以通过下面的例子被理解：
+
+```
+int result = sum(6, 9);
+```
+
+### 示例
+
 下面的例子表明了怎么定义方法和怎么调用它：
 
 ```

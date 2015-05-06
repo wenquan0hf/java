@@ -18,7 +18,7 @@ or
 dataType arrayRefVar[];  //  works but not preferred way.
 ```
 
-**注** 风格 dataType[] arrayRefVar 是首选的。风格 dataType arrayRefVar[] 来自于 C/C++ 语言，并在 Java 采用中来容纳 C/C++ 编程。
+**注** 风格 dataType[] arrayRefVar 是首选的。风格 dataType arrayRefVar[] 来自于 C/C++ 语言， 方便Java 继承 C/C++ 的编程风格。
 
 ### 示例
 

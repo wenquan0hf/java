@@ -1,6 +1,6 @@
 # Java Numbers 类
    
-通常情况下，当我们与数字打交道时，使用原始数据类型，如 byte，int，long，double 等。
+通常情况下，当我们处理数字时，使用原始数据类型，如 byte，int，long，double 等。
 
 ### 示例
 
