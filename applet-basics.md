@@ -84,10 +84,6 @@ message would appear here.
 <hr>
 </html>
 ```
-
-基于以上的例子，这里有一个鲜活的例子：[Applet Example](http://www.tutorialspoint.com/java/hello.htm)  
-
-**注意：** 你可以参考 [HTML Applet Tag](http://www.tutorialspoint.com/html/html_applet_tag.htm) 来理解更多有关从 HTML 调用 applet 的信息。 
  
 <applet> 标签的 code 属性是需要的。它指定 Applet 类运行。宽度和高度也是需要来规定 applet 运行的面板的初始大小。applet 指令必须用 </applet> 标签结束。  
 
