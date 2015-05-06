@@ -250,7 +250,7 @@ $ java SendFileEmail
 Sent message successfully....
 ```
 
-##用户身份认证部分
+## 用户身份认证部分
 
 如果为了身份认证的目的需要给电子邮件服务器提供用户 ID 和密码，你可以像这样设置这些属性： 
  
